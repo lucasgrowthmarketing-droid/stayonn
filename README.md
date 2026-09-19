@@ -4,7 +4,7 @@ Landing page em Next.js App Router, TypeScript, Tailwind CSS e Framer Motion.
 
 ## Executar
 
-`npm ci` e `npm run dev`. Para gerar o site estático: `npm run build` (saída `out/`).
+`npm ci` e `npm run dev`. Para gerar o build de produção: `npm run build`.
 
 ## Edição
 
@@ -20,7 +20,7 @@ Landing page em Next.js App Router, TypeScript, Tailwind CSS e Framer Motion.
 
 `lib/checkout.ts` define CheckoutProvider, CheckoutRequest e CheckoutResult. O adaptador atual retorna indisponibilidade, não envia dados, não armazena informações pessoais e não cria pedidos ou cobranças. O frontend oferece PIX e cartão, valida campos e CPF, mantém foco dentro do diálogo e devolve foco ao botão de origem.
 
-Para Mercado Pago: implementar backend HTTPS que receba planId e dados, valide preço pelo catálogo no servidor, calcule frete e crie a sessão. Token secreto apenas no servidor. Confirmar pagamento por webhook assinado e idempotente. Não confiar em valores do navegador. A página está exportada estaticamente; uma integração real precisará de backend externo ou mudança de hospedagem/runtime.
+Para Mercado Pago: implementar um Route Handler ou backend HTTPS que receba planId e dados, valide preço pelo catálogo no servidor, calcule frete e crie a sessão. Token secreto apenas no servidor. Confirmar pagamento por webhook assinado e idempotente. Não confiar em valores do navegador.
 
 Antes de vender: definir quantidade e condições da assinatura, frete, conteúdo final do produto, links sociais, suporte e políticas. Não foram inventadas avaliações, certificações, vendas ou benefícios médicos.
 

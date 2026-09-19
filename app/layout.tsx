@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Supplements. Software. Community. Um ecossistema para quem constrói o próximo passo.",
   icons: { icon: "/onn-icon.png", apple: "/onn-icon.png" },
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
 };
 export default function Layout({
   children,
