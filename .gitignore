@@ -6,3 +6,4 @@ out
 work
 outputs
 tsconfig.tsbuildinfo
+.vercel
