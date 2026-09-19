@@ -5,3 +5,4 @@ out
 .env*
 work
 outputs
+tsconfig.tsbuildinfo
